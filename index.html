@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html lang="Eng">
+<html lang="es">
 <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="my first website">
-        <meta name="viewport" content="width=device-width, initial-scale"> 
-        <link rel="stylesheet" href="ccs/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Nova</title>
+    <link rel="stylesheet" href="ccs/estilos.css">
 </head>
 <body>
 
-  
-<h1 class="titulo-interactivo"> Pet Moments
-</h1>
-    <div class="carrusel-infinito">
-      <div class="carrusel-track">
-        <div class="carrusel-item"><img src="img/pexels-tima-miroshnichenko-6845984.jpg" alt="Foto de carrusel 1"></div>
-        <div class="carrusel-item"><img src="https://media.istockphoto.com/id/1516239450/photo/love-portrait-and-family-with-dog-at-animal-shelter-for-adoption-at-kennel.jpg?s=1024x1024&w=is&k=20&c=9CwGN1mL5X56cflQdYxz8rbflkgw82BB3le4-saOuwY=" alt="Foto de carrusel 3"></div>
-        <div class="carrusel-item"><img src="https://images.pexels.com/photos/7862080/pexels-photo-7862080.jpeg" alt="Foto ₁ Clic"></div>
-        <div class="carrusel-item"><img src="https://images.pexels.com/photos/18578046/pexels-photo-18578046.jpeg" alt="Foto de carrusel 5"></div>
-        <div class="carrusel-item"><img src="https://images.pexels.com/photos/6845984/pexels-photo-6845984.jpeg" alt="Foto de carrusel 5"></div>
-        <div class="carrusel-item"><img src="https://images.pexels.com/photos/19913781/pexels-photo-19913781.jpeg" alt="Foto de carrusel 6"></div>
-        <div class="carrusel-item"><img src="https://images.pexels.com/photos/19913781/pexels-photo-19913781.jpeg" alt="Foto de carrusel 7"></div>
-      </div>
+    <div class="carousel-container">
+        <button class="nav-btn prev-btn">&lt;</button>
+
+        <div class="carousel-card back-left">
+            <img src="img/dog 1.jpg" alt="Mascota 1">
+        </div>
+
+        <div class="carousel-card mid-left">
+            <img src="img/cat 4.jpg" alt="Mascota 2">
+        </div>
+
+        <div class="carousel-card active">
+            <img src="img/cat 2.jpg" alt="Mascota 3">
+        </div>
+
+        <div class="carousel-card mid-right">
+            <img src="img/cat 1.jpg" alt="Mascota 4">
+        </div>
+
+        <div class="carousel-card back-right">
+            <img src="img/dog 2.jpg" alt="Mascota 5">
+        </div>
+
+        <button class="nav-btn next-btn">&gt;</button>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
+</html>
+    
