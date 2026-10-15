@@ -1,108 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f8f8ff">
-  <meta name="description" content="PETNOVA: una comunidad en Panamá para cuidar mejor a perros, gatos y otros compañeros de vida.">
-  <title>PETNOVA — Cuidarles nos conecta</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Erica+One&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="ccs/estilos.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e9e0d8">
+<meta name="description" content="PETNOVA: una comunidad en Panamá para cuidar mejor a los animales que amamos.">
+<title>PETNOVA — Cuidamos lo que amas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ccs/estilos.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="PETNOVA, inicio">
-      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M22 36c-2.8-2.3-14-9.3-14-18.1A7.2 7.2 0 0 1 21 13.8l1 1 1-1a7.2 7.2 0 0 1 13 4.1C36 26.7 24.8 33.7 22 36Z" fill="currentColor"/><circle cx="14" cy="9" r="3.2" fill="currentColor"/><circle cx="22" cy="6.5" r="3.2" fill="currentColor"/><circle cx="30" cy="9" r="3.2" fill="currentColor"/></svg></span>
-      <span class="brand-word">PET<span>NOVA</span><small>COMUNIDAD ANIMAL · PANAMÁ</small></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
-      <a href="#petmoments">PetMoments</a><a href="#comunidad">Comunidad</a><a href="#bienestar">Bienestar</a>
-      <button class="btn btn-small btn-outline" id="openDashboard">Mi espacio <span aria-hidden="true">↗</span></button>
-    </nav>
-  </header>
-
-  <main id="contenido">
-    <section class="hero section-wrap" id="inicio" data-reveal="hero">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-dot"></span> HECHA PARA QUIENES LOS AMAN</div>
-        <h1>El amor también<br>se cuida <span>todos los días.</span></h1>
-        <p class="hero-lead">Desde la primera vacuna hasta ese paseo de siempre: cuidar mejor empieza con información útil y una comunidad que te entiende. PETNOVA nace para quienes comparten ese amor en Panamá.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#herramientas">Descubre PETNOVA <span aria-hidden="true">→</span></a><a class="text-link" href="#comunidad">Conoce la comunidad <span aria-hidden="true">↗</span></a></div>
-        <div class="trust-row"><div class="avatar-stack" aria-hidden="true"><img src="img/cat 1.jpg" alt=""><img src="img/dog 1.jpg" alt=""><img src="img/cat 4.jpg" alt=""></div><p><strong>Una red que acompaña</strong><br><span>Para cada etapa de sus vidas</span></p></div>
-      </div>
-      <div class="hero-art" aria-label="Fotografías de mascotas">
-        <div class="hero-blob"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <figure class="pet-photo photo-main"><img src="img/cat 2.jpg" alt="Gato descansando con tranquilidad"><figcaption><span class="caption-icon">✦</span><span><b>Pequeños momentos</b><small>También son bienestar</small></span></figcaption></figure>
-        <figure class="pet-photo photo-side"><img src="img/dog 2.jpg" alt="Perro mirando con curiosidad"></figure>
-        <div class="floating-note note-top"><span class="note-icon violet">♡</span><span><b>Amor que se nota</b><small>En cada cuidado</small></span></div>
-        <div class="floating-note note-bottom"><span class="note-icon blue">✓</span><span><b>Un día a la vez</b><small>Con más organización</small></span></div>
-        <span class="sparkle sparkle-a" aria-hidden="true">✳</span><span class="sparkle sparkle-b" aria-hidden="true">✦</span>
-      </div>
-    </section>
-
-    <section class="petmoments" id="petmoments" aria-label="PetMoments: momentos que nos conectan">
-      <div class="petmoments-sticky">
-        <div class="petmoments-glow petmoments-glow-one"></div><div class="petmoments-glow petmoments-glow-two"></div>
-        <div class="petmoments-heading">
-          <p class="petmoments-kicker"><span></span> PETNOVA PRESENTA</p>
-          <h2>La vida está hecha<br>de <em>PetMoments.</em></h2>
-          <p class="petmoments-intro">Una mirada, una aventura, una siesta al sol.<br>Pequeños momentos. Un vínculo enorme.</p>
-        </div>
-        <div class="petmoments-stage" aria-hidden="true">
-          <article class="pm-card pm-card-0"><img src="img/dog 1.jpg" alt=""><span class="pm-number">01</span><span class="pm-caption">Aventuras de todos los días</span></article>
-          <article class="pm-card pm-card-1"><img src="img/cat 1.jpg" alt=""><span class="pm-number">02</span><span class="pm-caption">La calma también es amor</span></article>
-          <article class="pm-card pm-card-2"><img src="img/cat 2.jpg" alt=""><span class="pm-number">03</span><span class="pm-caption">Miradas que lo dicen todo</span></article>
-          <article class="pm-card pm-card-3"><img src="img/dog 2.jpg" alt=""><span class="pm-number">04</span><span class="pm-caption">Siempre a tu lado</span></article>
-          <article class="pm-card pm-card-4"><img src="img/cat 4.jpg" alt=""><span class="pm-number">05</span><span class="pm-caption">En su propio mundo</span></article>
-          <article class="pm-card pm-card-5"><img src="img/dog 1.jpg" alt=""><span class="pm-number">06</span><span class="pm-caption">Cada día, una historia</span></article>
-        </div>
-        <div class="petmoments-footer"><span class="pm-scroll-mark"><i></i></span><span>DESLIZA PARA EXPLORAR</span><span class="pm-count">06 MOMENTOS <b>✳</b></span></div>
-      </div>
-    </section>
-
-    <section class="value-strip" aria-label="Qué encontrarás en PETNOVA"><div><span class="value-icon lilac">♡</span><p><b>Cuidado con cariño</b><small>Hábitos que hacen la diferencia</small></p></div><div><span class="value-icon blue">⌁</span><p><b>Información útil</b><small>Recursos para decidir mejor</small></p></div><div><span class="value-icon yellow">✦</span><p><b>Conexiones reales</b><small>Una comunidad que acompaña</small></p></div></section>
-
-    <section class="section-wrap section-pad" id="bienestar" data-reveal="section">
-      <div class="section-heading"><div><span class="eyebrow">CUIDAR TAMBIÉN ES APRENDER</span><h2>Más confianza en cada<br><span>etapa de su vida.</span></h2></div><p>Desde los primeros días hasta la edad adulta, reúne información práctica para acompañar a tu mascota con atención y responsabilidad.</p></div>
-      <div class="resource-grid">
-        <article class="resource-card resource-purple"><div class="resource-top"><span class="resource-number">01 / PREVENCIÓN</span><span class="resource-symbol">✳</span></div><img class="resource-photo" src="img/cat 4.jpg" alt="Gato en un momento tranquilo"><h3>Salud preventiva</h3><p>Organiza vacunas, desparasitación y visitas veterinarias con orientación profesional.</p><a href="#herramientas" class="card-link">Organizar cuidados <span>→</span></a></article>
-        <article class="resource-card resource-blue"><div class="resource-top"><span class="resource-number">02 / VIDA DIARIA</span><span class="resource-symbol">✦</span></div><img class="resource-photo" src="img/dog 1.jpg" alt="Perro disfrutando de su día"><h3>Hábitos saludables</h3><p>Ideas para enriquecer su rutina: alimentación adecuada, juego, movimiento y descanso.</p><a href="#recursos" class="card-link">Explorar recursos <span>→</span></a></article>
-        <article class="resource-card resource-yellow"><div class="resource-top"><span class="resource-number">03 / CONEXIÓN</span><span class="resource-symbol">♡</span></div><img class="resource-photo" src="img/cat 2.jpg" alt="Gato acompañado por su cuidador"><h3>Comunidad que ayuda</h3><p>Comparte experiencias, descubre iniciativas locales y aprende junto a otros cuidadores.</p><a href="#comunidad" class="card-link">Conectar con otros <span>→</span></a></article>
-      </div>
-      <p class="disclaimer">PETNOVA comparte información educativa; no sustituye la evaluación ni las indicaciones de un médico veterinario.</p>
-    </section>
-
-    <section class="tools-section" id="herramientas" data-reveal="section"><div class="section-wrap tools-layout">
-      <div class="tools-copy"><span class="eyebrow">TU ESPACIO PETNOVA</span><h2>Todo lo importante,<br><span>más fácil de recordar.</span></h2><p>Un lugar sencillo para llevar el registro de tus compañeros, anotar próximos cuidados y tener a mano lo que quieres consultar.</p>
-      <ul class="feature-list"><li><span>✓</span><div><b>Perfiles de tus mascotas</b><small>Nombre, especie y cumpleaños.</small></div></li><li><span>✓</span><div><b>Recordatorios de cuidado</b><small>Fechas importantes y pendientes.</small></div></li><li><span>✓</span><div><b>Recursos para consultar</b><small>Orientación clara para el día a día.</small></div></li></ul>
-      <button class="btn btn-primary" id="openDashboard2">Crear mi espacio <span aria-hidden="true">→</span></button><p class="privacy-note">Prototipo de demostración: los datos se guardan en este navegador.</p></div>
-      <div class="dashboard-preview">
-        <div class="preview-top"><div><span class="preview-kicker">MI ESPACIO</span><h3>¡Hola, cuidador!</h3><p>Un poquito de organización, mucho cariño.</p></div><span class="preview-avatar">♡</span></div>
-        <div class="preview-date"><span>PRÓXIMO EN TU LISTA</span><span class="date-pill">PLAN DE CUIDADOS</span></div>
-        <div class="preview-task"><span class="task-check">✓</span><div><b>Revisar su calendario</b><small>Las fechas que importan, en un solo lugar.</small></div><span class="task-arrow">↗</span></div>
-        <div class="preview-pets-title"><b>Mis compañeros</b><span>Tu pequeña familia</span></div>
-        <div class="preview-pets"><div class="preview-pet"><img src="img/cat 1.jpg" alt=""><span><b>Mi gato</b><small>Perfil de ejemplo</small></span><span class="pet-dot purple-dot"></span></div><div class="preview-pet"><img src="img/dog 1.jpg" alt=""><span><b>Mi perro</b><small>Perfil de ejemplo</small></span><span class="pet-dot blue-dot"></span></div></div>
-        <div class="preview-bottom"><span>♥</span> Cada cuidado cuenta.</div>
-      </div>
-    </div></section>
-
-    <section class="section-wrap section-pad community-section" id="comunidad" data-reveal="section">
-      <div class="section-heading"><div><span class="eyebrow">NOS UNE EL BIENESTAR</span><h2>Cuidar en comunidad<br><span>llega más lejos.</span></h2></div><p>Conecta con personas, profesionales e iniciativas que trabajan por una vida mejor para los animales en Panamá.</p></div>
-      <div class="community-grid">
-        <article class="community-feature"><img src="img/dog 1.jpg" alt="Perro, parte de una comunidad de cuidadores"><div class="community-overlay"><span class="community-label">COMUNIDAD PETNOVA</span><h3>Un lugar para aprender,<br>compartir y acompañarnos.</h3><a href="#participar" class="btn btn-light">Quiero participar <span>→</span></a></div></article>
-        <div class="community-side"><div class="community-stat"><span class="stat-icon">♡</span><h3>El cuidado es colectivo.</h3><p>Una recomendación responsable, una adopción informada o una mano amiga pueden marcar la diferencia.</p></div><div class="community-join" id="participar"><div><span class="eyebrow">EMPIEZA POR AQUÍ</span><h3>¿Qué te gustaría<br>encontrar en PETNOVA?</h3></div><form id="interestForm"><label class="sr-only" for="interest">Elige tu interés</label><select id="interest" required><option value="">Selecciona tu interés</option><option>Consejos de bienestar</option><option>Recordatorios y organización</option><option>Comunidad y actividades</option><option>Adopción responsable</option><option>Servicios para mascotas en Panamá</option></select><button class="btn btn-primary" type="submit">Enviar interés <span>→</span></button><p class="form-feedback" id="interestFeedback" role="status"></p></form></div></div>
-      </div>
-    </section>
-
-    <section class="resource-band" id="recursos"><div class="section-wrap resource-band-inner"><div><span class="eyebrow">UN BUEN LUGAR PARA EMPEZAR</span><h2>El bienestar se construye<br>con decisiones informadas.</h2><p>Consulta con profesionales veterinarios y acude a fuentes confiables para las necesidades particulares de tu mascota.</p></div><a href="#bienestar" class="btn btn-outline">Ver temas de bienestar <span>→</span></a></div></section>
-  </main>
-
-  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#inicio"><span class="brand-mark"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 36c-2.8-2.3-14-9.3-14-18.1A7.2 7.2 0 0 1 21 13.8l1 1 1-1a7.2 7.2 0 0 1 13 4.1C36 26.7 24.8 33.7 22 36Z" fill="currentColor"/><circle cx="14" cy="9" r="3.2" fill="currentColor"/><circle cx="22" cy="6.5" r="3.2" fill="currentColor"/><circle cx="30" cy="9" r="3.2" fill="currentColor"/></svg></span><span class="brand-word">PET<span>NOVA</span><small>COMUNIDAD ANIMAL · PANAMÁ</small></span></a><p>Porque cuidarles nos conecta.<br>Una comunidad para vivir el bienestar animal con más amor y confianza.</p><div class="footer-links"><a href="#comunidad">Comunidad</a><a href="#bienestar">Bienestar</a><a href="#herramientas">Mi espacio</a></div></div><div class="footer-bottom"><span>© <span id="currentYear"></span> PETNOVA · Panamá</span><span>Una propuesta para el bienestar animal.</span></div></footer>
-
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+ <a class="brand" href="#inicio" aria-label="PETNOVA inicio"><span class="brand-mark">✿</span><span class="brand-word">PET<span>NOVA</span><small>CUIDAMOS LO QUE AMAS · PANAMÁ</small></span></a>
+ <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+ <nav class="main-nav" id="mainNav"><a href="#bienestar">Bienestar</a><a href="#petmoments">PetMoments</a><a href="#comunidad">Comunidad</a><button class="btn btn-small" id="openDashboard">Mi espacio ↗</button></nav>
+</header>
+<main id="contenido">
+<section class="hero" id="inicio">
+ <div class="hero-image"><img src="img/dog 2.jpg" alt="Perro mirando con curiosidad y ternura"><span class="hero-image-label">UNA VIDA LLENA DE MOMENTOS</span><span class="hero-stamp">PAWS<br> & HEARTS</span></div>
+ <div class="hero-copy"><p class="eyebrow"><span></span> UNA COMUNIDAD HECHA CON AMOR</p><h1>Su mundo es pequeño.<br><em>Tu amor lo hace enorme.</em></h1><p class="hero-lead">Consejos, recuerdos y herramientas para acompañar cada etapa de la vida de quienes hacen de tu casa un hogar.</p><div class="hero-actions"><a class="btn btn-primary" href="#bienestar">Explorar PETNOVA <span>↗</span></a><a class="text-link" href="#petmoments">Ver PetMoments ↓</a></div><div class="hero-note"><span class="paw">✿</span><span><b>Para quienes son familia.</b><small>Desde Panamá, con cariño.</small></span></div></div>
+ <div class="hero-bottomline"><span>01 — CUIDADO CONSCIENTE</span><span>AMOR EN CADA ETAPA</span><span>8°58' N · PANAMÁ</span></div>
+</section>
+<section class="intro-strip"><p>NO SON SOLO MASCOTAS.</p><h2>Son parte de <em>nuestra historia.</em></h2><span>Y cada historia merece cuidado.</span></section>
+<section class="services section-wrap" id="bienestar"><div class="section-title"><p class="eyebrow"><span></span> CUIDAR TAMBIÉN ES QUERER</p><h2>Pequeños cuidados.<br><em>Grandes diferencias.</em></h2><p>Una guía cercana para ayudarte a cuidar con más confianza y menos dudas.</p></div>
+ <div class="service-grid">
+  <a class="service-card service-dog" href="#herramientas"><img src="img/dog 1.jpg" alt="Perro disfrutando de un paseo"><span class="service-tag">01 / PREVENCIÓN</span><div><h3>Salud y prevención</h3><p>Vacunas, controles y cuidados para cada etapa.</p><b>Organizar cuidados ↗</b></div></a>
+  <a class="service-card service-cat" href="#recursos"><img src="img/cat 4.jpg" alt="Gato descansando"><span class="service-tag">02 / BIENESTAR</span><div><h3>Hábitos felices</h3><p>Juego, descanso y rutinas que les hacen bien.</p><b>Descubrir consejos ↗</b></div></a>
+  <a class="service-card service-community" href="#comunidad"><img src="img/cat 2.jpg" alt="Gato mirando atentamente"><span class="service-tag">03 / CONEXIÓN</span><div><h3>Una comunidad real</h3><p>Experiencias y apoyo entre personas que los aman.</p><b>Conectar ↗</b></div></a>
+ </div>
+</section>
+<section class="petmoments" id="petmoments"><div class="pm-top"><p class="eyebrow"><span></span> UN ÁLBUM VIVO DE AMOR</p><span class="pm-edition">PETNOVA / MOMENTS Nº 01</span></div><div class="pm-heading"><h2>Every tail has<br>a <em>story.</em></h2><p>Las miradas, las travesuras, la calma.<br>Esos instantes que solo ustedes entienden.</p></div><div class="pm-stage" aria-label="Galería de momentos con mascotas">
+ <article class="pm-card pm-1"><img src="img/dog 1.jpg" alt="Un perro en un momento cotidiano"><span>01 / AVENTURAS</span></article><article class="pm-card pm-2"><img src="img/cat 1.jpg" alt="Gato relajado"><span>02 / PAUSA</span></article><article class="pm-card pm-3"><img src="img/cat 2.jpg" alt="La mirada de un gato"><span>03 / MIRADAS</span></article><article class="pm-card pm-4"><img src="img/dog 2.jpg" alt="Perro curioso"><span>04 / COMPAÑÍA</span></article><article class="pm-card pm-5"><img src="img/cat 4.jpg" alt="Gato en casa"><span>05 / HOGAR</span></article></div><div class="pm-bottom"><span>DESLIZA PARA RECORRER LOS MOMENTOS</span><span class="pm-progress"><i></i></span><span>01 — 05</span></div></section>
+<section class="values"><div class="values-photo"><img src="img/cat 1.jpg" alt="Gato en un entorno tranquilo"><span>ELLOS NOS ENSEÑAN A ESTAR PRESENTES.</span></div><div class="values-copy"><p class="eyebrow"><span></span> NUESTRA FORMA DE VER EL CUIDADO</p><h2>Más cariño.<br>Más conocimiento.<br><em>Mejores días.</em></h2><div class="value-row"><span>01</span><div><b>Aprender sin juzgar</b><p>Información sencilla para tomar decisiones más conscientes.</p></div></div><div class="value-row"><span>02</span><div><b>Cuidar con intención</b><p>Pequeños hábitos y recordatorios para no dejar lo importante al azar.</p></div></div><div class="value-row"><span>03</span><div><b>Crecer en comunidad</b><p>El bienestar animal también se construye acompañándonos.</p></div></div></div></section>
+<section class="workspace" id="herramientas"><div class="workspace-copy"><p class="eyebrow"><span></span> TU RINCÓN PETNOVA</p><h2>Todo su cuidado,<br><em>en un mismo lugar.</em></h2><p>Crea sus perfiles, anota fechas importantes y lleva un registro sencillo de sus cuidados.</p><ul><li>Perfiles para tus mascotas</li><li>Recordatorios de citas y cuidados</li><li>Notas para tener todo presente</li></ul><button class="btn btn-primary" id="openDashboard2">Entrar a mi espacio ↗</button><small>Prototipo: los datos se guardan en este navegador.</small></div><div class="workspace-card"><div class="workspace-card-head"><span>MI PEQUEÑA FAMILIA</span><span class="workspace-heart">♥</span></div><div class="workspace-pet"><img src="img/cat 1.jpg" alt=""><div><small>MI COMPAÑERA</small><b>Un mundo de ronroneos</b><span>Perfil de ejemplo</span></div><i>↗</i></div><div class="workspace-pet"><img src="img/dog 1.jpg" alt=""><div><small>MI COMPAÑERO</small><b>Listo para otra aventura</b><span>Perfil de ejemplo</span></div><i>↗</i></div><div class="workspace-reminder"><span>✳</span><div><b>Un recordatorio a tiempo</b><small>Organiza su próximo cuidado.</small></div></div></div></section>
+<section class="community" id="comunidad"><div class="community-image"><img src="img/dog 2.jpg" alt="Perro como parte de una familia"><span>JUNTOS, POR ELLOS.</span></div><div class="community-copy"><p class="eyebrow"><span></span> SOMOS PARTE DE ALGO BONITO</p><h2>El cuidado crece<br>cuando <em>se comparte.</em></h2><p>Queremos conectar a quienes aman a los animales en Panamá: personas cuidadoras, iniciativas y voces que promueven el bienestar.</p><form id="interestForm"><label for="interest">¿Qué te gustaría encontrar en PETNOVA?</label><select id="interest" required><option value="">Selecciona una opción</option><option>Consejos de bienestar</option><option>Recordatorios y organización</option><option>Comunidad y actividades</option><option>Adopción responsable</option><option>Servicios para mascotas en Panamá</option></select><button class="btn btn-primary" type="submit">Quiero ser parte ↗</button><p class="form-feedback" id="interestFeedback" role="status"></p></form></div></section>
+<section class="last-call" id="recursos"><p>PARA CADA HOCICO, CADA PATA Y CADA HISTORIA.</p><h2>Cuidamos lo que <em>amas.</em></h2><a class="btn btn-light" href="#inicio">Volver al inicio ↑</a></section>
+</main>
+<footer class="site-footer"><div class="footer-top"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">✿</span><span class="brand-word">PET<span>NOVA</span><small>CUIDAMOS LO QUE AMAS · PANAMÁ</small></span></a><p>Una comunidad para cuidar mejor<br>a quienes hacen hogar contigo.</p><nav><a href="#bienestar">Bienestar</a><a href="#petmoments">PetMoments</a><a href="#comunidad">Comunidad</a><a href="#herramientas">Mi espacio</a></nav></div><div class="footer-bottom"><span>© <span id="currentYear"></span> PETNOVA · Panamá</span><span>Hecho con cariño por los animales.</span></div></footer>
   <dialog class="dashboard-modal" id="dashboardModal" aria-labelledby="modalTitle">
     <div class="modal-head"><div><span class="eyebrow">TU ESPACIO PERSONAL</span><h2 id="modalTitle">Mi PETNOVA</h2></div><button class="modal-close" id="closeDashboard" aria-label="Cerrar">×</button></div>
     <div class="modal-tabs" role="tablist" aria-label="Herramientas de mi espacio"><button class="modal-tab active" data-tab="petsPanel" role="tab" aria-selected="true">Mis mascotas</button><button class="modal-tab" data-tab="remindersPanel" role="tab" aria-selected="false">Recordatorios</button></div>
@@ -110,8 +45,7 @@
     <section class="modal-panel" id="remindersPanel" role="tabpanel" hidden><p class="modal-intro">Anota vacunas, citas, baños u otras fechas de cuidado. Este prototipo no envía notificaciones externas.</p><form id="reminderForm" class="compact-form"><div class="field-row"><div class="field"><label for="reminderTitle">¿Qué necesitas recordar?</label><input id="reminderTitle" maxlength="70" placeholder="Ej. Consulta veterinaria" required></div><div class="field"><label for="reminderDate">Fecha</label><input id="reminderDate" type="date" required></div></div><div class="field"><label for="reminderPet">Mascota (opcional)</label><select id="reminderPet"><option value="">Sin asignar</option></select></div><button class="btn btn-primary" type="submit">Guardar recordatorio +</button><p class="form-feedback" id="reminderFeedback" role="status"></p></form><div class="saved-list" id="remindersList"></div></section>
     <p class="modal-privacy">Tus registros se guardan localmente en este navegador. No introduzcas información sensible.</p>
   </dialog>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
-  <script src="transiciones.js"></script>
-</body>
-</html>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script><script src="transiciones.js"></script>
+</body></html>
