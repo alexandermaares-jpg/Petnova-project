@@ -26,7 +26,7 @@
   </header>
 
   <main id="contenido">
-    <section class="hero section-wrap" id="inicio">
+    <section class="hero section-wrap" id="inicio" data-reveal="hero">
       <div class="hero-copy">
         <div class="eyebrow"><span class="eyebrow-dot"></span> HECHA PARA QUIENES LOS AMAN</div>
         <h1>Su bienestar.<br>Tu tranquilidad.<br><span>Una comunidad.</span></h1>
@@ -44,9 +44,28 @@
       </div>
     </section>
 
+    <section class="cinematic-scene" id="historias" aria-label="Historias de bienestar animal">
+      <div class="cinematic-sticky">
+        <img class="cinematic-poster" src="img/dog 2.jpg" alt="" aria-hidden="true">
+        <video class="cinematic-video" autoplay muted loop playsinline preload="metadata" poster="img/dog 2.jpg" aria-hidden="true">
+          <source src="https://videos.pexels.com/video-files/4196536/4196536-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="cinematic-shade"></div>
+        <div class="cinematic-frame" aria-hidden="true"></div>
+        <div class="cinematic-copy">
+          <span class="cinematic-kicker">CADA HISTORIA MERECE CUIDADO</span>
+          <h2>Hay un mundo entero<br> detrás de cada <em>mirada.</em></h2>
+          <p>Conocerles mejor es el primer paso para cuidarles mejor.</p>
+          <a class="cinematic-link" href="#bienestar">Descubre cómo acompañarlos <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="cinematic-caption"><span class="caption-line"></span><span>Historias reales. Vínculos para siempre.</span></div>
+        <div class="cinematic-counter" aria-hidden="true"><span>01</span><i></i><span>03</span></div>
+      </div>
+    </section>
+
     <section class="value-strip" aria-label="Qué encontrarás en PETNOVA"><div><span class="value-icon lilac">♡</span><p><b>Cuidado con cariño</b><small>Hábitos que hacen la diferencia</small></p></div><div><span class="value-icon blue">⌁</span><p><b>Información útil</b><small>Recursos para decidir mejor</small></p></div><div><span class="value-icon yellow">✦</span><p><b>Conexiones reales</b><small>Una comunidad que acompaña</small></p></div></section>
 
-    <section class="section-wrap section-pad" id="bienestar">
+    <section class="section-wrap section-pad" id="bienestar" data-reveal="section">
       <div class="section-heading"><div><span class="eyebrow">CUIDAR TAMBIÉN ES APRENDER</span><h2>Más confianza en cada<br><span>etapa de su vida.</span></h2></div><p>Desde los primeros días hasta la edad adulta, reúne información práctica para acompañar a tu mascota con atención y responsabilidad.</p></div>
       <div class="resource-grid">
         <article class="resource-card resource-purple"><div class="resource-top"><span class="resource-number">01 / PREVENCIÓN</span><span class="resource-symbol">✳</span></div><div class="resource-illustration illustration-paws" aria-hidden="true"><span>●</span><span>●</span><span>●</span><span>●</span><i>♥</i></div><h3>Salud preventiva</h3><p>Organiza vacunas, desparasitación y visitas veterinarias con orientación profesional.</p><a href="#herramientas" class="card-link">Organizar cuidados <span>→</span></a></article>
@@ -56,7 +75,7 @@
       <p class="disclaimer">PETNOVA comparte información educativa; no sustituye la evaluación ni las indicaciones de un médico veterinario.</p>
     </section>
 
-    <section class="tools-section" id="herramientas"><div class="section-wrap tools-layout">
+    <section class="tools-section" id="herramientas" data-reveal="section"><div class="section-wrap tools-layout">
       <div class="tools-copy"><span class="eyebrow">TU ESPACIO PETNOVA</span><h2>Todo lo importante,<br><span>más fácil de recordar.</span></h2><p>Un lugar sencillo para llevar el registro de tus compañeros, anotar próximos cuidados y tener a mano lo que quieres consultar.</p>
       <ul class="feature-list"><li><span>✓</span><div><b>Perfiles de tus mascotas</b><small>Nombre, especie y cumpleaños.</small></div></li><li><span>✓</span><div><b>Recordatorios de cuidado</b><small>Fechas importantes y pendientes.</small></div></li><li><span>✓</span><div><b>Recursos para consultar</b><small>Orientación clara para el día a día.</small></div></li></ul>
       <button class="btn btn-primary" id="openDashboard2">Crear mi espacio <span aria-hidden="true">→</span></button><p class="privacy-note">Prototipo de demostración: los datos se guardan en este navegador.</p></div>
@@ -70,7 +89,7 @@
       </div>
     </div></section>
 
-    <section class="section-wrap section-pad community-section" id="comunidad">
+    <section class="section-wrap section-pad community-section" id="comunidad" data-reveal="section">
       <div class="section-heading"><div><span class="eyebrow">NOS UNE EL BIENESTAR</span><h2>La comunidad se construye<br><span>compartiendo.</span></h2></div><p>Historias, consejos y pequeñas iniciativas pueden hacer que el cuidado animal sea una experiencia más acompañada.</p></div>
       <div class="community-grid">
         <article class="community-feature"><img src="img/dog 1.jpg" alt="Perro, parte de una comunidad de cuidadores"><div class="community-overlay"><span class="community-label">COMUNIDAD PETNOVA</span><h3>Un lugar para aprender,<br>compartir y acompañarnos.</h3><a href="#participar" class="btn btn-light">Quiero participar <span>→</span></a></div></article>
@@ -92,5 +111,6 @@
   </dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
+  <script src="transiciones.js"></script>
 </body>
 </html>
