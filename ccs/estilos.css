@@ -165,3 +165,51 @@ body{background:var(--paper)}
 @media(prefers-reduced-motion:reduce){
   .resource-card{transition:none}
 }
+
+
+/* PETMOMENTS — scroll-driven 3D photo journey, built without a framework */
+.petmoments{height:260vh;position:relative;background:#211a32;color:#fff;isolation:isolate;--pm-progress:0}
+.petmoments-sticky{position:sticky;top:0;height:100svh;min-height:620px;overflow:hidden;display:flex;align-items:center;background:radial-gradient(ellipse at 74% 46%,#49366b 0%,#2b2141 42%,#211a32 76%)}
+.petmoments-glow{position:absolute;border-radius:50%;filter:blur(2px);pointer-events:none}
+.petmoments-glow-one{width:44vw;height:44vw;right:-10vw;top:-18vw;background:radial-gradient(circle,#8268d54c,transparent 68%)}
+.petmoments-glow-two{width:30vw;height:30vw;left:30%;bottom:-23vw;background:radial-gradient(circle,#0cbddc26,transparent 70%)}
+.petmoments-heading{position:absolute;left:7.2%;top:13%;z-index:5;max-width:530px;pointer-events:none}
+.petmoments-kicker{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:800;letter-spacing:2.6px;color:#b7edf5;margin:0 0 23px}
+.petmoments-kicker span{width:24px;height:2px;background:#0cbddc}
+.petmoments-heading h2{font:900 clamp(43px,6.2vw,88px)/.96 Nunito,sans-serif;letter-spacing:-4px;margin:0;color:#fff}
+.petmoments-heading h2 em{font-style:normal;color:#b9a9ff}
+.petmoments-intro{font-size:13px;line-height:1.8;color:#d4cde3;margin-top:22px}
+.petmoments-stage{position:absolute;inset:0;perspective:1300px;perspective-origin:52% 50%;transform-style:preserve-3d}
+.pm-card{position:absolute;left:50%;top:53%;width:clamp(155px,20vw,270px);height:clamp(230px,31vw,390px);overflow:hidden;border:1px solid #ffffff42;border-radius:5px;background:#34294a;box-shadow:0 30px 90px #100a1e66;transform-style:preserve-3d;will-change:transform;transition:border-color .35s}
+.pm-card img{width:100%;height:100%;object-fit:cover;filter:saturate(.84) brightness(.84);transition:filter .4s,transform .8s}
+.pm-card:hover img{filter:saturate(1) brightness(1);transform:scale(1.045)}
+.pm-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#211a321c 40%,#211a32d9 100%);pointer-events:none}
+.pm-number{position:absolute;top:13px;left:14px;z-index:1;font-size:10px;letter-spacing:2px;color:#fff}
+.pm-caption{position:absolute;bottom:16px;left:15px;right:12px;z-index:1;font:800 13px Nunito,sans-serif;line-height:1.25;color:#fff}
+.pm-card-0{--pm-x:-33vw;--pm-y:10vh;--pm-z:-110px;--pm-r:-12deg;--pm-s:.8}
+.pm-card-1{--pm-x:-14vw;--pm-y:17vh;--pm-z:30px;--pm-r:-5deg;--pm-s:1}
+.pm-card-2{--pm-x:8vw;--pm-y:8vh;--pm-z:120px;--pm-r:4deg;--pm-s:1.08}
+.pm-card-3{--pm-x:29vw;--pm-y:17vh;--pm-z:-15px;--pm-r:10deg;--pm-s:.92}
+.pm-card-4{--pm-x:42vw;--pm-y:-15vh;--pm-z:-170px;--pm-r:14deg;--pm-s:.72}
+.pm-card-5{--pm-x:-42vw;--pm-y:-20vh;--pm-z:-220px;--pm-r:-17deg;--pm-s:.65}
+.petmoments-footer{position:absolute;bottom:5.5%;left:7.2%;right:7.2%;display:flex;align-items:center;gap:12px;color:#b8afca;font-size:9px;font-weight:800;letter-spacing:2px}
+.pm-scroll-mark{height:27px;width:18px;border:1px solid #9d91b9;border-radius:12px;display:flex;justify-content:center;padding-top:5px}
+.pm-scroll-mark i{height:5px;width:3px;background:#0cbddc;border-radius:3px;animation:pm-scroll 1.4s infinite}
+.pm-count{margin-left:auto}.pm-count b{color:#0cbddc;margin-left:8px}
+@keyframes pm-scroll{0%{transform:translateY(0);opacity:1}80%,100%{transform:translateY(9px);opacity:0}}
+@media(max-width:760px){
+ .petmoments{height:220vh}
+ .petmoments-sticky{min-height:560px;align-items:flex-start}
+ .petmoments-heading{left:7%;right:7%;top:10%;max-width:none}
+ .petmoments-heading h2{font-size:clamp(42px,11vw,65px);letter-spacing:-2.5px}
+ .petmoments-intro{font-size:12px;margin-top:13px}
+ .pm-card{width:clamp(145px,43vw,205px);height:clamp(215px,61vw,300px);top:66%}
+ .pm-card-0{--pm-x:-53vw;--pm-y:8vh;--pm-z:-110px;--pm-r:-12deg;--pm-s:.75}
+ .pm-card-1{--pm-x:-30vw;--pm-y:13vh;--pm-z:0px;--pm-r:-7deg;--pm-s:.86}
+ .pm-card-2{--pm-x:-3vw;--pm-y:5vh;--pm-z:90px;--pm-r:3deg;--pm-s:1}
+ .pm-card-3{--pm-x:25vw;--pm-y:12vh;--pm-z:0px;--pm-r:9deg;--pm-s:.84}
+ .pm-card-4{--pm-x:49vw;--pm-y:-9vh;--pm-z:-150px;--pm-r:14deg;--pm-s:.68}
+ .pm-card-5{--pm-x:-65vw;--pm-y:-16vh;--pm-z:-200px;--pm-r:-18deg;--pm-s:.6}
+ .petmoments-footer{left:7%;right:7%;bottom:3.5%;font-size:8px;letter-spacing:1.2px}
+}
+@media(prefers-reduced-motion:reduce){.pm-scroll-mark i{animation:none}}
